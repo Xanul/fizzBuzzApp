@@ -4,11 +4,14 @@
   "description": "FizzBuzzApp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
   },
   "author": "Rodrigo Rivas",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.0.2"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.1"
   }
 }
