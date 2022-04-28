@@ -1,0 +1,14 @@
+{
+  "name": "fizzbuzzapp",
+  "version": "1.0.0",
+  "description": "FizzBuzzApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Rivas",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
+}
