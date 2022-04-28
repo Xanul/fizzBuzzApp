@@ -10,7 +10,7 @@ describe('Testing the FizzBuzzService class', () => {
 
     test('Testing applyValidationInExplorer method', () => {
     
-      expect(explorersFizzBuzz.length).toBe(155)
+      expect(explorersFizzBuzz.length).toBe(15)
       expect(explorersFizzBuzz[0]).toMatchObject({trick: 1})
       expect(explorersFizzBuzz[2]).toMatchObject({trick:"FIZZ"})
       expect(explorersFizzBuzz[4]).toMatchObject({trick: 'BUZZ'})
