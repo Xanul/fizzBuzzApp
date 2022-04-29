@@ -4,11 +4,14 @@
   "description": "FizzBuzzApp",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "author": "Rodrigo Rivas",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^26.0.0"
   },
   "dependencies": {
