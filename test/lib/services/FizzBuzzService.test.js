@@ -18,4 +18,17 @@ describe("Testing the FizzBuzzService class", () => {
         
     });
 
+    test('Testing applyValidationInNumber method', () => {
+
+        const test1 = {score: 1, trick: 1}
+        const test2 = {score: 3, trick: "FIZZ"}
+        const test3 = {score: 5, trick: "BUZZ"}
+        const test4 = {score:15, trick: "FIZZBUZZ"}
+
+        expect(FizzBuzzService.applyValidationInNumber(1)).toEqual(test1)
+        expect(FizzBuzzService.applyValidationInNumber(3)).toEqual(test2)
+        expect(FizzBuzzService.applyValidationInNumber(5)).toEqual(test3)
+        expect(FizzBuzzService.applyValidationInNumber(15)).toEqual(test4)
+    })
+
 });

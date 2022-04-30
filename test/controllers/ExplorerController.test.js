@@ -23,10 +23,8 @@ describe('Testing ExplorerService.js', () => {
 
     test('Testing getAmountOfExplorersByMission', () => {
         const nodeAmount = ExplorerController.getExplorersAmountByMission("node");
-        console.log(nodeAmount)
         expect(nodeAmount).toMatch(/10/);
         const javaAmount = ExplorerController.getExplorersAmountByMission("java");
-        console.log(javaAmount)
         expect(javaAmount).toMatch(/5/)
         
     })
