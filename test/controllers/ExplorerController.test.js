@@ -29,4 +29,18 @@ describe('Testing ExplorerService.js', () => {
         
     })
 
+    test('Testing getFizzBuzzByNumber', () => {
+
+        const test1 = {score: 1, trick: 1}
+        const test2 = {score: 3, trick: "FIZZ"}
+        const test3 = {score: 5, trick: "BUZZ"}
+        const test4 = {score:15, trick: "FIZZBUZZ"}
+
+        expect(ExplorerController.getFizzBuzzByNumber(1)).toEqual(test1)
+        expect(ExplorerController.getFizzBuzzByNumber(3)).toEqual(test2)
+        expect(ExplorerController.getFizzBuzzByNumber(5)).toEqual(test3)
+        expect(ExplorerController.getFizzBuzzByNumber(15)).toEqual(test4)
+
+    })
+
 })
