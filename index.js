@@ -20,5 +20,6 @@ const test4 = FizzBuzzService.applyValidationInNumber(15);
 const testExplorer = Reader.readJsonFile('./data/explorers.json')
 // console.log(testExplorer)
 const test5 = ExplorerService.getExplorersByStack(testExplorer)
-console.log(test5)
-
+// console.log(test5)
+const test6 = ExplorerController.getExplorersByStack("java")
+console.log(test6);
