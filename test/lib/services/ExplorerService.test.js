@@ -24,14 +24,14 @@ describe("Testing the ExplorerService class", () => {
         expect(explorersGitHubUsernames[0]).toMatch(/GitHub/);
     });
 
-    test('Testing getExplorersByStack static method', () => {
-      const explorersWithJavascriptStack = ExplorerService.getExplorersByStack(explorers, "javascript");
-      expect(explorersWithJavascriptStack[0]["stacks"]).toContain("javascript");
-      const explorersWithElixirStack = ExplorerService.getExplorersByStack(explorers, "elixir");
-      expect(explorersWithElixirStack[0]["stacks"]).toContain("elixir");
-      const explorerUndefined = ExplorerService.getExplorersByStack(explorers);
-      expect(explorerUndefined).toBeUndefined();
-    })
+    test("Testing getExplorersByStack static method", () => {
+        const explorersWithJavascriptStack = ExplorerService.getExplorersByStack(explorers, "javascript");
+        expect(explorersWithJavascriptStack[0]["stacks"]).toContain("javascript");
+        const explorersWithElixirStack = ExplorerService.getExplorersByStack(explorers, "elixir");
+        expect(explorersWithElixirStack[0]["stacks"]).toContain("elixir");
+        const explorerUndefined = ExplorerService.getExplorersByStack(explorers);
+        expect(explorerUndefined).toBeUndefined();
+    });
 
 });
   
