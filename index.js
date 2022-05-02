@@ -21,5 +21,5 @@ const testExplorer = Reader.readJsonFile('./data/explorers.json')
 // console.log(testExplorer)
 const test5 = ExplorerService.getExplorersByStack(testExplorer)
 // console.log(test5)
-const test6 = ExplorerController.getExplorersByStack("java")
+const test6 = ExplorerController.getExplorersByStack()
 console.log(test6);
