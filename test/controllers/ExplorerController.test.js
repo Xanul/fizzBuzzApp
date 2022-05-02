@@ -40,7 +40,7 @@ describe('Testing ExplorerService.js', () => {
         expect(ExplorerController.getFizzBuzzByNumber(3)).toEqual(test2)
         expect(ExplorerController.getFizzBuzzByNumber(5)).toEqual(test3)
         expect(ExplorerController.getFizzBuzzByNumber(15)).toEqual(test4)
-
+        
     })
 
 })

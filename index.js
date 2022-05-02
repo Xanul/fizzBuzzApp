@@ -16,4 +16,10 @@ const test2 = ExplorerController.getExplorersUsernamesByMission("node")
 const test3 = ExplorerController.getExplorersAmountByMission("node")
 // console.log(test3)
 const test4 = FizzBuzzService.applyValidationInNumber(15);
-console.log(test4)
+// console.log(test4)
+const testExplorer = Reader.readJsonFile('./data/explorers.json')
+// console.log(testExplorer)
+const test5 = ExplorerService.getExplorersByStack(testExplorer, "reasonML")
+console.log(test5)
+
+//TODO test getExplorerByStack and learn more about indexOf
