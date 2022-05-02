@@ -19,7 +19,6 @@ const test4 = FizzBuzzService.applyValidationInNumber(15);
 // console.log(test4)
 const testExplorer = Reader.readJsonFile('./data/explorers.json')
 // console.log(testExplorer)
-const test5 = ExplorerService.getExplorersByStack(testExplorer, "reasonML")
+const test5 = ExplorerService.getExplorersByStack(testExplorer)
 console.log(test5)
 
-//TODO test getExplorerByStack and learn more about indexOf
